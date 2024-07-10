@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1253</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#3E2717;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>50</y>
+      <width>261</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Nome</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Remover">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>100</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Remover</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>220</y>
+      <width>831</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <column>
+     <property name="text">
+      <string/>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string/>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string/>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string/>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>0</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Tipo de Contrato</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Inserir">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>100</y>
+      <width>181</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Inserir</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>0</y>
+      <width>251</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Departamento</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Alterar">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>100</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Alterar</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Dep">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>JUR</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ZOO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SER</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PUC/IDIOMAS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MAF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>PSI</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MED</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>IGPA</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>EDU</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>LET</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>HGS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>GABI/ITS</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FONO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ECO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ENG</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>FIT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>DEF</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CON</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>BIO</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CBB</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CBM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ARQ</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ADM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ADV</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>251</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>0</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Matricula</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Dados</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>50</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Titulação</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Nome">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>70</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Tit">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>70</y>
+      <width>251</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Pos-Doutor(a)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mestre(a)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Especialista</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Bacharelado(a)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Doutor(a)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="comboBox_Tip">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>20</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Horista</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>TI</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Encontrar">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>171</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Procurar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Mat">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>20</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>-20</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>EXERCICIO 13</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>40</y>
+      <width>181</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>TABELA HASH</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>171</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Professor Eugenio</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>220</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>POS</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>220</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>COLISAO 1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>220</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>COLISAO 2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>220</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>COLISAO 3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Arquivo">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>191</y>
+      <width>711</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Pesquisar">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>191</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Sylfaen</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #7B5726;
+color: #CCCCCC;</string>
+    </property>
+    <property name="text">
+     <string>Pesquisar por arquivo:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1253</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
